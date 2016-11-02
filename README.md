@@ -1,5 +1,5 @@
 # CryptoSeries
 
-Poloniex Time Series Overview
+Poloniex Time Series Overview Generator
 
 ![sample](sample.png)
