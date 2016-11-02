@@ -1,0 +1,16 @@
+{
+  "name": "cryptoseries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPLv2",
+  "dependencies": {
+    "gm": "^1.23.0",
+    "node-horseman": "^3.2.0",
+    "phantomjs": "^2.1.7"
+  }
+}
