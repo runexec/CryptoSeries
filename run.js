@@ -21,13 +21,17 @@ const ZOOMS = [6,
 	       24,
 	       48,
 	       96,
-	       168]
+	       168,
+	       336,
+	       744]
 
 const CANDLES = [300,
 		 900,
 		 1800,
 		 7200,
-		 14400]
+		 14400,		 
+		 86400,
+		 300]
 
 
 const REMOVE = ['div#currentChartRange',
@@ -96,11 +100,11 @@ function execInit() {
 		.log('Accessing ' +  element)
 		.viewport(1920,1080)
 		.open(element)
-		.log('2 second wait after load.')
-		.wait(2000)
+		.log('3 seconds wait after load.')
+		.wait(3000)
 		.log('Clicking ' + candle_button)	    
 		.click(candle_button)
-	    	.wait(1000)
+	    	.wait(2000)
 		.log('Clicking ' + zoom_button)
 		.click(zoom_button)
 		.evaluate(function (a) {
@@ -114,7 +118,7 @@ function execInit() {
 		.close()
 	})	
 
-	console.log('Waiting 30 seconds before merging images to ' + mergedImagePath())
+	console.log('Waiting 45 seconds before merging images to ' + mergedImagePath())
 
 	setTimeout(() => {
 	    var y = null
@@ -147,7 +151,7 @@ function execInit() {
 	    y.write(mergedImagePath(), (e) => {
 		if (e) console.log(e)
 	    })
-	}, 30 * 1000)
+	}, 45 * 1000)
 
     } catch (error) {
 	console.log(error)
